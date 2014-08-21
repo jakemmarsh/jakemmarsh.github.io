@@ -11,7 +11,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 
-  background: url(../img/landscape_bg.jpg) no-repeat center center fixed;
+  background: url(../img/bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -44,7 +44,7 @@ body {
 .links {
   position: relative;
   display: block;
-  width: 250px;
+  width: 275px;
   height: 40px;
   margin: 0 auto;
 }
@@ -69,6 +69,38 @@ body {
   right: 0;
   margin-left: 10px;
 }
+
+  .links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+    .links ul li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+      .links ul li a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+
+        background: rgba(0, 0, 0, 0.4);
+        color: #ffffff;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+
+        .links ul li a:hover {
+          background: rgba(0, 0, 0, 1);
+        }
 
 .icon {
 
