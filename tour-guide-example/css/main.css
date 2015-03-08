@@ -1,0 +1,236 @@
+/* line 1, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+body {
+  font-family: arial, sans-serif; }
+
+/* line 5, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+img {
+  height: 95px;
+  width: 269px; }
+
+/* line 10, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+#logo {
+  display: block;
+  text-align: center;
+  padding-top: 200px; }
+
+/* line 16, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+#form {
+  display: block;
+  text-align: center; }
+
+/* line 21, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+#google_search {
+  display: inline-block;
+  margin-left: 560px; }
+
+/* line 26, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+#im_feeling_lucky {
+  display: inline-block; }
+
+/* line 30, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+button {
+  border-radius: 2px;
+  color: #444;
+  border: 1px solid;
+  border-color: #c6c6c6;
+  background-color: #f5f5f5;
+  font: bold 11px/24px arial;
+  text-align: center;
+  margin: 12px 6px 8px 6px;
+  padding: 0 4px 0 4px; }
+
+/* line 42, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+input {
+  width: 570px;
+  height: 24px;
+  border: 1px transparent gray;
+  margin: 5px 0 5px 0;
+  font-size: 16px; }
+
+/* line 52, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+header a {
+  color: #404040;
+  text-decoration: none;
+  font: 13px/27px Arial, sans-serif;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 11px; }
+
+/* line 60, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+header a.applications {
+  color: #404040;
+  text-decoration: none;
+  background-position: -51px -452px;
+  opacity: .55;
+  display: inline-block;
+  outline: none;
+  vertical-align: middle;
+  border-radius: 2px;
+  height: 30px;
+  width: 30px;
+  background-image: url(https://ssl.gstatic.com/gb/images/v1_2e543709.png);
+  background-size: 112px 1828px; }
+
+/* line 75, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+header a.sign_in {
+  border-radius: 2px;
+  display: inline-block;
+  color: #FFF;
+  border: 1px solid #4285F4;
+  background-color: #4387FD;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 12px 0 12px;
+  line-height: 28px;
+  text-decoration: none;
+  cursor: default;
+  margin-left: 11px; }
+
+/* line 89, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+header {
+  float: right;
+  margin: 7px 22px 0px 0px; }
+
+/* line 96, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+footer {
+  display: inline-block;
+  border-top: 1px solid #E4E4E4;
+  line-height: 40px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  background-color: #F2F2F2;
+  width: 100%;
+  vertical-align: middle; }
+
+/* line 108, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+footer a {
+  color: #666;
+  text-decoration: none;
+  font: 13px/27px Arial, sans-serif; }
+
+/* line 114, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+.left {
+  margin-left: 30px; }
+
+/* line 117, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+.right {
+  float: right;
+  margin: 10px 30px 0 0; }
+
+/* line 122, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+.tour-indicator {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #3f94d0;
+  cursor: pointer;
+  /* Animate */
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-name: pulse;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-out;
+  -o-animation-name: pulse;
+  -o-animation-duration: 1.5s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-out;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out; }
+
+/* WebKit/Safari and Chrome */
+@-webkit-keyframes pulse {
+  /* line 153, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  /* line 158, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+  80% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); }
+
+  /* line 163, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+  100% {
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    opacity: 0; } }
+
+/* Gecko/Firefox */
+
+/* Presto/Opera */
+
+/* Standard */
+@keyframes pulse {
+  /* line 211, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+  0% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    opacity: 0.5; }
+
+  /* line 216, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+  80% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0; }
+
+  /* line 221, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+  100% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    opacity: 0; } }
+
+/* line 227, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+.tour-backdrop {
+  z-index: 998;
+  /* one below z-index of tour-toolip (999) */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.45); }
+
+/* line 239, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+.tour-tooltip {
+  z-index: 999;
+  width: 200px;
+  background-color: #ffffff;
+  color: #545454;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4); }
+
+/* line 254, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+.tour-tooltip p {
+  margin: 5px 3px; }
+
+/* line 258, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+.tour-tooltip .tour-btn.close {
+  cursor: pointer;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 3px;
+  text-align: center; }
+
+/* line 272, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
+.tour-tooltip .tour-btn.close:hover {
+  border-color: #3f94d0;
+  color: #3f94d0; }
+
