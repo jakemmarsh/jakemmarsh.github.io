@@ -2,16 +2,16 @@
 body {
   font-family: arial, sans-serif; }
 
-/* line 5, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
-img {
-  height: 95px;
-  width: 269px; }
-
 /* line 10, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
-#logo {
+#logo-container {
   display: block;
   text-align: center;
   padding-top: 200px; }
+
+#logo-container > img {
+  height: 95px;
+  width: 269px;
+}
 
 /* line 16, /Users/jakemarsh/Desktop/tour-guide-example/app/styles/main.scss */
 #form {

@@ -77,41 +77,41 @@ var App = React.createClass({displayName: "App",
 
   render: function() {
     return (
-      React.createElement("div", null, 
+      React.createElement("div", null,
 
-        React.createElement("header", null, 
-          React.createElement("a", {href: "https://plus.google.com/"}, "+You"), 
-          React.createElement("a", {href: "https://mail.google.com/mail/"}, "Gmail"), 
-          React.createElement("a", {href: "https://www.google.com/imghp?hl=en&tab=wi&ei=NMTVU63-KseYqAb9qIA4&ved=0CAQQqi4oAg"}, "Images"), 
-          React.createElement("a", {className: "applications", href: "http://www.google.com/intl/en/options/", title: "Applications"}), 
+        React.createElement("header", null,
+          React.createElement("a", {href: "https://plus.google.com/"}, "+You"),
+          React.createElement("a", {href: "https://mail.google.com/mail/"}, "Gmail"),
+          React.createElement("a", {href: "https://www.google.com/imghp?hl=en&tab=wi&ei=NMTVU63-KseYqAb9qIA4&ved=0CAQQqi4oAg"}, "Images"),
+          React.createElement("a", {className: "applications", href: "http://www.google.com/intl/en/options/", title: "Applications"}),
           React.createElement("a", {className: "sign_in", href: "https://accounts.google.com/ServiceLogin?hl=en&continue=https://www.google.com/%3Fgws_rd%3Dssl"}, "Sign in")
-        ), 
+        ),
 
-        React.createElement("div", {id: "logo"}, 
+        React.createElement("div", {id: "logo-container"},
           React.createElement("img", {src: "https://www.google.com/images/srpr/logo11w.png", alt: "Google Logo"})
-        ), 
+        ),
 
-        React.createElement("div", {id: "form"}, 
-          React.createElement("form", {action: "http://www.google.com"}, 
+        React.createElement("div", {id: "form"},
+          React.createElement("form", {action: "http://www.google.com"},
             React.createElement("input", {type: "text", name: "search", id: "input"})
           )
-        ), 
+        ),
 
-        React.createElement("div", {id: "buttons-container"}, 
-          React.createElement("div", {id: "google_search"}, 
+        React.createElement("div", {id: "buttons-container"},
+          React.createElement("div", {id: "google_search"},
             React.createElement("button", {id: "search-button"}, "Google Search")
-          ), 
-          React.createElement("div", {id: "im_feeling_lucky"}, 
+          ),
+          React.createElement("div", {id: "im_feeling_lucky"},
             React.createElement("button", null, "I'm Feeling Lucky")
           )
-        ), 
+        ),
 
-        React.createElement("footer", null, 
-          React.createElement("a", {className: "left", href: "https://www.google.com/intl/en/ads/?fg=1"}, "Advertising"), 
-          React.createElement("a", {className: "left", href: "https://www.google.com/services/?fg=1"}, "Business"), 
-          React.createElement("a", {className: "left", href: "https://www.google.com/intl/en/about.html?fg=1"}, "About"), 
+        React.createElement("footer", null,
+          React.createElement("a", {className: "left", href: "https://www.google.com/intl/en/ads/?fg=1"}, "Advertising"),
+          React.createElement("a", {className: "left", href: "https://www.google.com/services/?fg=1"}, "Business"),
+          React.createElement("a", {className: "left", href: "https://www.google.com/intl/en/about.html?fg=1"}, "About"),
 
-          React.createElement("a", {className: "right", href: "https://www.google.com/preferences?hl=en"}, "Settings"), 
+          React.createElement("a", {className: "right", href: "https://www.google.com/preferences?hl=en"}, "Settings"),
           React.createElement("a", {className: "right", id: "policies", href: "https://www.google.com/intl/en/policies/?fg=1"}, "Privacy & Terms")
         )
 
@@ -141,12 +141,12 @@ var SearchPage    = require('./pages/SearchPage');
 var NotFoundPage  = require('./pages/NotFoundPage');
 
 module.exports = (
-  React.createElement(Route, {handler: App, path: "/"}, 
+  React.createElement(Route, {handler: App, path: "/"},
 
-    React.createElement(DefaultRoute, {handler: HomePage}), 
+    React.createElement(DefaultRoute, {handler: HomePage}),
 
-    React.createElement(Route, {name: "Home", path: "/", handler: HomePage}), 
-    React.createElement(Route, {name: "Search", path: "/search", handler: SearchPage}), 
+    React.createElement(Route, {name: "Home", path: "/", handler: HomePage}),
+    React.createElement(Route, {name: "Search", path: "/search", handler: SearchPage}),
 
     React.createElement(NotFoundRoute, {handler: NotFoundPage})
 
@@ -324,15 +324,15 @@ var HomePage = React.createClass({displayName: "HomePage",
 
   render: function() {
     return (
-      React.createElement("section", {className: "home-page"}, 
+      React.createElement("section", {className: "home-page"},
 
-        React.createElement(DocumentTitle, {title: "Home"}), 
+        React.createElement(DocumentTitle, {title: "Home"}),
 
-        React.createElement("div", null, 
+        React.createElement("div", null,
           "Home"
-        ), 
+        ),
 
-        React.createElement("div", null, 
+        React.createElement("div", null,
           React.createElement(Link, {to: "Search"}, "Search")
         )
 
@@ -362,9 +362,9 @@ var NotFoundPage = React.createClass({displayName: "NotFoundPage",
 
   render: function() {
     return (
-      React.createElement("section", {className: "not-found-page"}, 
+      React.createElement("section", {className: "not-found-page"},
 
-        React.createElement(DocumentTitle, {title: "404: Not Found"}), 
+        React.createElement(DocumentTitle, {title: "404: Not Found"}),
 
         "Page Not Found"
 
@@ -395,15 +395,15 @@ var SearchPage = React.createClass({displayName: "SearchPage",
 
   render: function() {
     return (
-      React.createElement("section", {className: "search-page"}, 
+      React.createElement("section", {className: "search-page"},
 
-        React.createElement(DocumentTitle, {title: "Search"}), 
+        React.createElement(DocumentTitle, {title: "Search"}),
 
-        React.createElement("div", null, 
+        React.createElement("div", null,
           "Search"
-        ), 
+        ),
 
-        React.createElement("div", null, 
+        React.createElement("div", null,
           React.createElement(Link, {to: "Home"}, "Back to Home")
         )
 
@@ -2058,7 +2058,7 @@ var FakeNode = require('../mixins/FakeNode');
  *       <Route name="about" handler={About}/>
  *     </Route>
  *   ];
- *   
+ *
  *   Router.run(routes, function (Handler) {
  *     React.render(<Handler/>, document.body);
  *   });
@@ -2661,10 +2661,10 @@ var React = require('react');
  *     mixins: [ Router.State ],
  *     render: function () {
  *       var className = this.props.className;
- *   
+ *
  *       if (this.isActive('about'))
  *         className += ' is-active';
- *   
+ *
  *       return React.DOM.a({ className: className }, this.props.children);
  *     }
  *   });
@@ -3923,9 +3923,9 @@ var createRouter = require('./createRouter');
  *   Router.run(routes, function (Handler) {
  *     React.render(<Handler/>, document.body);
  *   });
- * 
+ *
  * Using HTML5 history and a custom "cursor" prop:
- * 
+ *
  *   Router.run(routes, Router.HistoryLocation, function (Handler) {
  *     React.render(<Handler cursor={cursor}/>, document.body);
  *   });
@@ -5646,17 +5646,17 @@ module.exports = function(settings, done) {
       if ( $target && $target.length ) {
         if ( this.state.showTooltip ) {
           element = (
-            React.createElement(Tooltip, {cssPosition: cssPosition, 
-                     xPos: this.state.xPos, 
-                     yPos: this.state.yPos, 
-                     text: currentStep.text, 
+            React.createElement(Tooltip, {cssPosition: cssPosition,
+                     xPos: this.state.xPos,
+                     yPos: this.state.yPos,
+                     text: currentStep.text,
                      closeTooltip: this.closeTooltip})
           );
         } else {
           element = (
-            React.createElement(Indicator, {cssPosition: cssPosition, 
-                       xPos: this.state.xPos, 
-                       yPos: this.state.yPos, 
+            React.createElement(Indicator, {cssPosition: cssPosition,
+                       xPos: this.state.xPos,
+                       yPos: this.state.yPos,
                        handleIndicatorClick: this.handleIndicatorClick})
           );
         }
@@ -5711,10 +5711,10 @@ var Tooltip = React.createClass({displayName: "Tooltip",
     };
 
     return (
-      React.createElement("div", null, 
-        React.createElement("div", {className: "tour-backdrop", onClick: this.props.closeTooltip}), 
-        React.createElement("div", {className: "tour-tooltip", style: styles}, 
-          React.createElement("p", null, this.props.text || ''), 
+      React.createElement("div", null,
+        React.createElement("div", {className: "tour-backdrop", onClick: this.props.closeTooltip}),
+        React.createElement("div", {className: "tour-tooltip", style: styles},
+          React.createElement("p", null, this.props.text || ''),
           React.createElement("div", {className: "tour-btn close", onClick: this.props.closeTooltip}, "Close")
         )
       )
