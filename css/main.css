@@ -43,8 +43,8 @@ body {
 
 .links {
   position: relative;
-  display: block;
-  width: 275px;
+  display: inline-block;
+  width: auto;
   height: 40px;
   margin: 0 auto;
 }
@@ -62,12 +62,12 @@ body {
 
 .links:before {
   left: 0;
-  margin-right: 10px;
+  margin-left: -60px; /* 50px - 10px */
 }
 
 .links:after {
   right: 0;
-  margin-left: 10px;
+  margin-right: -60px; /* 50px - 10px */
 }
 
   .links ul {
