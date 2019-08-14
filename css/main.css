@@ -20,6 +20,14 @@ body {
   font-family: 'Times New Roman', serif;
 }
 
+a {
+  color: #000;
+}
+
+  a:hover, a:active, a:focus {
+    color: #0000ff;
+  }
+
 .name {
   margin: 0 0 6px;
   font-size: 36px;
@@ -37,7 +45,7 @@ body {
     margin: 0 12px 0 0;
   }
 
-    .links ul li a {
+    .links ul li a.icon-link {
       display: block;
       width: 40px;
       height: 40px;
@@ -45,7 +53,6 @@ body {
       font-size: 24px;
       text-align: center;
       background: rgba(256, 256, 256, 0.4);
-      color: #000;
       -webkit-border-radius: 100%;
       -moz-border-radius: 100%;
       border-radius: 100%;
@@ -53,10 +60,12 @@ body {
       transition: all 0.3s ease;
     }
 
-      .links ul li a:hover {
-        background: rgba(256, 256, 256, 1);
-        color: #0000ff;
-      }
+    .links ul li img {
+      position: relative;
+      top: 6px;
+      width: 30px;
+      height: 30px;
+    }
 
 
 .tagline {
